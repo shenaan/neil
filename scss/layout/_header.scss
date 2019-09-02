@@ -16,7 +16,7 @@
     font-size: 1.71rem; //24px
     font-weight: 700;
     line-height: 2.72rem; //38.18px
-    margin-bottom: 36px;
+    margin-bottom: 21px;
   }
 
   &.is-opened {
@@ -48,7 +48,10 @@
   @include respond-to(lg) {
     width: 30%;
     max-width: 33%;
-    padding: 0 36px;
+    padding: 0 36px 0 31px;
+  }
+  @include respond-to(xl){
+    padding-left: 46px;
   }
 }
 
@@ -149,7 +152,16 @@
     bottom: 0;
     height: 88%; // 636/715
     width: 364px;
-    margin: auto -150px auto auto;
+    margin: auto -160px auto auto;
+  }
+  @include respond-to(lg){
+    margin: auto -172px auto auto;
+  }
+}
+
+.header-share__link{
+  @include respond-to(md){
+    margin-left: 6px;
   }
 }
 

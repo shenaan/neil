@@ -13,8 +13,11 @@
 
 .section-help__inner-title{
   margin-bottom: 24px;
+  h2{
+    margin-bottom: 8px;
+  }
   @include respond-to(md){
-    margin-bottom: 59px;
+    margin-bottom: 53px;
   }
 }
 
@@ -52,7 +55,7 @@
 }
 
 .section-help__list-item{
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   span{
     font-size: 1.5rem;
     font-weight: 700;
@@ -68,21 +71,24 @@
 .section-help__card--right{
   padding-top: 42px;
   h2{
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+  }
+  p{
+    font-size: 1.143rem;
   }
 
   @include respond-to(md){
     padding-top: 72px;
     padding-left: 111px;
     p{
-      max-width: 280px;
+      max-width: 347px;
     }
   }
   @include respond-to(lg){
     padding-left: 165px;
   }
   @include respond-to(xl){
-    padding-left: 165px;
+    padding-left: 184px;
   }
 }
 
@@ -94,6 +100,13 @@
   }
   @include respond-to(md){
     max-width: none;
+  }
+  @include respond-to(lg){
+    width: 470px;
+    margin-left: -17px;
+  }
+  @include respond-to(xl){
+    width: 508px;
   }
 }
 
@@ -107,6 +120,6 @@
   margin-top: 29px;
   position: relative;
   @include respond-to(md){
-    margin-top: 62px;
+    margin-top: 56px;
   }
 }

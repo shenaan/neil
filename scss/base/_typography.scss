@@ -22,6 +22,8 @@ h2, .h2 {
   font-weight: 700;
   line-height: 2.14rem; //30px
   text-transform: uppercase;
+  letter-spacing: -0.5px;
+
   @include respond-to(md) {
     font-size: 3rem;
     line-height: 3rem; //42px
@@ -32,6 +34,7 @@ h3, .h3 {
   font-size: 1.71rem; //24px
   font-weight: 700;
   line-height: 2.72rem;  //38.18px
+  letter-spacing: -0.3px;
 
   @include respond-to(md) {
     font-size: 2.14rem; //30px
@@ -53,13 +56,14 @@ p {
   font-size: 1.14rem; //16px
   font-weight: 400;
   line-height: 1.85rem; //26px
-  margin-bottom: 2.14rem; //30px
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.6px;
 
   &:last-of-type{
     margin-bottom: 0;
   }
   @include respond-to(md) {
     font-size: 1rem; //14px
-    line-height: 1.71rem; //24px
+    line-height: 1.75rem; //24px
   }
 }

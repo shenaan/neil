@@ -42,7 +42,7 @@
       top: -53px;
     }
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     .slick-dots {
       top: -75px;
     }
@@ -83,10 +83,23 @@
 
 .shop-slider__product-img {
   position: relative;
+  display: flex;
   max-width: 217px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
+  overflow: hidden;
   img {
     width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.6s all ease-in-out;
+    transform-origin: center;
+    object-fit: cover;
+  }
+
+  @include on-event {
+    img {
+      transform: scale(1.1, 1.1);
+    }
   }
 
   @include respond-to(md) {
@@ -100,9 +113,10 @@
   p {
     margin-bottom: 0;
     line-height: 1.5rem;
+    letter-spacing: 0;
   }
   @include respond-to(md) {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 }
 

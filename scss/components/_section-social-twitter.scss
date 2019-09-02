@@ -27,7 +27,7 @@
   border-radius: 50%;
   overflow: hidden;
   flex: 0 1 46px;
-  margin-right: 16px;
+  margin-right: 11px;
   img{
     @include imageCover;
     object-position: center;
@@ -43,6 +43,7 @@
   p{
     margin-bottom: 0;
     line-height: 1.29rem; //18px
+    letter-spacing: 0;
   }
   span{
     color: $pinkColor;

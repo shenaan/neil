@@ -4,7 +4,7 @@
   @include center();
 
   @include respond-to(xl) {
-    padding: 0 66px;
+    padding: 0 71px;
   }
 }
 
@@ -21,6 +21,10 @@
     max-width: 100%;
   }
   @include respond-to(lg) {
-    padding: 0 125px;
+    //padding: 0 125px;
+    padding: 0 98px 0 152px;
+  }
+  @include respond-to(xl){
+    padding: 0 98px 0 125px;
   }
 }

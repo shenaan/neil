@@ -28,7 +28,7 @@
     max-width: none;
   }
   @include respond-to(xl) {
-    padding: 0 66px;
+    padding: 0 43px;
   }
 }
 
@@ -41,7 +41,7 @@
   }
   @include respond-to(md) {
     h2 {
-      margin-bottom: 19px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -51,26 +51,30 @@
   max-width: 100%;
 
   @include respond-to(md) {
-    width: 50%;
-    max-width: 50%;
+    width: 51%;
+    max-width: 51%;
     min-height: 100%;
 
     &--left {
       padding: 0 25px 0 75px;
+      width: 51%;
+      max-width: 51%;
     }
 
     &--right {
       padding: 0 25px 0 75px;
+      width: 49%;
+      max-width: 49%;
     }
   }
 
   @include respond-to(lg) {
     &--left {
-      padding: 0 50px 0 125px;
+      padding: 0 50px 0 151px;
     }
 
     &--right {
-      padding: 0 106px 0 145px;
+      padding: 0 106px 0 151px;
     }
   }
 }
@@ -81,7 +85,7 @@
   position: relative;
   left: -4px;
   @include respond-to(md) {
-    margin-top: 70px;
+    margin-top: 64px;
     max-width: none;
   }
 }

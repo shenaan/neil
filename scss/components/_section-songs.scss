@@ -41,7 +41,7 @@
 
   @include respond-to(md) {
     padding-top: 100px;
-    padding-bottom: 110px;
+    padding-bottom: 92px;
     min-height: 705px;
     height: auto;
     &:before {
@@ -79,7 +79,7 @@
     .section__card-title {
       width: 100%;
       max-width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 61px;
     }
   }
 }
@@ -118,7 +118,7 @@
   &.is-selected {
     border-bottom: 1px solid #fff;
     padding-bottom: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     position: relative;
     &:after {
       content: '';
@@ -145,7 +145,7 @@
   }
 
   @include respond-to(md) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     display: block !important;
     &.is-selected {
       padding-bottom: 0;
@@ -166,11 +166,11 @@
   padding-bottom: 62px;
   color: #fff;
   h4 {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     display: none;
   }
   p {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   @include respond-to(md) {

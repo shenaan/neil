@@ -31,9 +31,10 @@
   }
 
   &--white {
-    padding: 10px 22px 14px 23px;
+    padding: 10px 22px 11px 23px;
     background: url("#{$imgUrl}btn-white.png") no-repeat center /100% 100%;
     color: $pinkColor;
+    font-size: 0.86rem;
   }
 
   &:hover,
@@ -44,15 +45,17 @@
 
   @include respond-to(md) {
     &--pink {
-      padding: 18px 36px 22px 47px;
+      //padding: 18px 22px 22px 47px;
+      padding: 18px 31px 22px 39px;
+
     }
 
     &--green {
-      padding: 19px 36px 16px 141px;
+      padding: 19px 36px 12px 141px;
     }
 
     &--white {
-      padding: 10px 21px 14px 24px;
+      padding: 10px 21px 11px 24px;
     }
   }
 }

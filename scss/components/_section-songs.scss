@@ -1,0 +1,199 @@
+.section-songs {
+  position: relative;
+  background-color: $greenColor;
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0;
+    height: 50px;
+    width: calc(100% + 50px);
+    transform: rotate(-2deg) translate(-24px, 20px) skew(-1deg);
+  }
+
+  @include respond-to(md) {
+    background-color: transparent;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.section-songs__card--left {
+  position: relative;
+  color: #fff;
+  padding-top: 85px;
+  &:before {
+    content: '';
+    display: none;
+    background-color: $greenColor;
+    position: absolute;
+    top: 0;
+    left: -22px;
+    width: calc(100% + 22px);
+    height: 100%;
+    z-index: -1;
+  }
+
+  @include respond-to(md) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    min-height: 705px;
+    height: auto;
+    &:before {
+      display: block;
+    }
+    &:after {
+      content: '';
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      top: 2px;
+      left: 100%;
+      width: 50px;
+      height: calc(100% + 10px);
+      transform: rotate(1deg) translate(-15px, -2px) skew(-1deg);
+    }
+  }
+  @include respond-to(xl) {
+    &:before {
+      left: -66px;
+      width: calc(100% + 66px);
+    }
+  }
+}
+
+.section-songs__list-wrap {
+
+  .section__card-title {
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(md) {
+    display: flex;
+    flex-wrap: wrap;
+    .section__card-title {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.section-songs__list {
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include respond-to(md) {
+    margin-bottom: 0;
+    width: 50%;
+    max-width: 50%;
+    &:last-of-type {
+      padding-left: 20px;
+    }
+  }
+}
+
+.section-songs__list-item {
+  font-size: 1.14rem; //16px
+  font-weight: 700;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    @include transition-04;
+  }
+
+  &.is-selected {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 16px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 6px;
+      margin: auto;
+      border: 1px solid #fff;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+      @include square(7px);
+    }
+    a {
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    a {
+      color: $textColor;
+    }
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 30px;
+    display: block !important;
+    &.is-selected {
+      padding-bottom: 0;
+      border-bottom: none;
+      &:after {
+        display: none;
+      }
+      a {
+        color: $textColor;
+      }
+    }
+  }
+}
+
+//Section song card right
+
+.section-songs__content {
+  padding-bottom: 62px;
+  color: #fff;
+  h4 {
+    margin-bottom: 15px;
+    display: none;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(md) {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: $textColor;
+    padding: 20px 0;
+    h4 {
+      display: block;
+    }
+  }
+}
+
+.section-songs__content-item {
+  display: none;
+  margin-bottom: -30px;
+
+  @include respond-to(md) {
+    display: none;
+
+    &--default {
+      display: block;
+    }
+  }
+}

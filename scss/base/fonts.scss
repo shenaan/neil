@@ -1,0 +1,31 @@
+@import "../abstracts/custom-variables";
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('#{$fontsUrl}RobotoCondensed-Bold.eot');
+  src: url('#{$fontsUrl}RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}RobotoCondensed-Bold.woff') format('woff'),
+  url('#{$fontsUrl}RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('#{$fontsUrl}RobotoCondensed-Light.eot');
+  src: url('#{$fontsUrl}RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}RobotoCondensed-Light.woff') format('woff'),
+  url('#{$fontsUrl}RobotoCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('#{$fontsUrl}RobotoCondensed-Regular.eot');
+  src: url('#{$fontsUrl}RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}RobotoCondensed-Regular.woff') format('woff'),
+  url('#{$fontsUrl}RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

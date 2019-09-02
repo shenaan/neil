@@ -1,0 +1,100 @@
+.section {
+  z-index: 1;
+  @include respond-to(md) {
+    min-height: 100vh;
+    padding: 20px 0 !important;
+    display: flex;
+    align-items: center;
+    @include ieStyles {
+      height: 100vh;
+    }
+  }
+}
+
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+  width: 100%;
+
+  @include respond-to(sm){
+    max-width: 700px;
+    @include center;
+  }
+  @include respond-to(md) {
+    flex-direction: row;
+    padding: 0 22px;
+    min-height: 100%;
+    max-width: none;
+  }
+  @include respond-to(xl) {
+    padding: 0 66px;
+  }
+}
+
+.section__inner-title {
+  h2 {
+    margin-bottom: 14px;
+  }
+  h3 {
+    line-height: 1;
+  }
+  @include respond-to(md) {
+    h2 {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.section__card {
+  width: 100%;
+  max-width: 100%;
+
+  @include respond-to(md) {
+    width: 50%;
+    max-width: 50%;
+    min-height: 100%;
+
+    &--left {
+      padding: 0 25px 0 75px;
+    }
+
+    &--right {
+      padding: 0 25px 0 75px;
+    }
+  }
+
+  @include respond-to(lg) {
+    &--left {
+      padding: 0 50px 0 125px;
+    }
+
+    &--right {
+      padding: 0 106px 0 145px;
+    }
+  }
+}
+
+.section__buttons {
+  margin-top: 37px;
+  max-width: 370px;
+  position: relative;
+  left: -4px;
+  @include respond-to(md) {
+    margin-top: 70px;
+    max-width: none;
+  }
+}
+
+.section__buttons-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .share__link {
+    margin-left: 19px;
+  }
+
+  .button--green {
+    margin-left: auto;
+  }
+}

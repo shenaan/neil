@@ -1,0 +1,112 @@
+.section-help{
+  padding-top: 61px;
+  padding-bottom: 54px;
+
+  @include respond-to(md){
+    padding-top: 0;
+    padding-bottom: 0;
+    .main-container__inner{
+      padding-right: 0;
+    }
+  }
+}
+
+.section-help__inner-title{
+  margin-bottom: 24px;
+  @include respond-to(md){
+    margin-bottom: 59px;
+  }
+}
+
+.section-help__cards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include respond-to(md){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.section-help__card{
+  width: 100%;
+  max-width: 100%;
+  @include respond-to(md){
+    &--left{
+      width: 46%;
+      max-width: 46%;
+    }
+    &--right{
+      width: 54%;
+      max-width: 54%;
+    }
+  }
+}
+
+.section-help__list{
+
+  @include respond-to(md){
+    max-width: 444px;
+  }
+}
+
+.section-help__list-item{
+  margin-bottom: 30px;
+  span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+  p{
+    display: inline-block;
+  }
+}
+
+//Right card
+
+.section-help__card--right{
+  padding-top: 42px;
+  h2{
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(md){
+    padding-top: 72px;
+    padding-left: 111px;
+    p{
+      max-width: 280px;
+    }
+  }
+  @include respond-to(lg){
+    padding-left: 165px;
+  }
+  @include respond-to(xl){
+    padding-left: 165px;
+  }
+}
+
+.section-help__img{
+  margin-top: 30px;
+  max-width: 550px;
+  img{
+    width: 100%;
+  }
+  @include respond-to(md){
+    max-width: none;
+  }
+}
+
+.section-help__card--full{
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-help__buttons{
+  max-width: 428px;
+  margin-top: 29px;
+  position: relative;
+  @include respond-to(md){
+    margin-top: 62px;
+  }
+}

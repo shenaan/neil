@@ -1,0 +1,141 @@
+.hero {
+  min-height: 100vh;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 51px;
+  @include respond-to(md) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.hero__img-wrap {
+  width: 100%;
+  height: 371px;
+  min-height: 50vh;
+  position: relative;
+  @include respond-to(md) {
+    width: 66%;
+    max-width: 66%;
+    height: inherit;
+    @include ieStyles {
+      height: 100vh;
+    }
+  }
+  @include respond-to(lg) {
+    width: 70%;
+    max-width: 70%;
+  }
+}
+
+.hero__img {
+  @include imageCover;
+  object-position: center;
+
+  @include respond-to(md) {
+    object-position: center;
+    z-index: 2;
+  }
+  @include respond-to(lg) {
+    object-position: right;
+  }
+}
+
+.hero__img-text {
+  position: absolute;
+  z-index: 3;
+  &--left {
+    top: 18px;
+    left: 27px;
+    height: calc(100% - 18px - 57px);
+    width: 27px;
+  }
+
+  &--bottom {
+    bottom: 18px;
+    left: 27px;
+    max-width: 87%;
+    width: auto;
+    height: 34px;
+  }
+
+  @include respond-to(md) {
+    &--left {
+      top: 29px;
+      left: 29px;
+      height: calc(100% - 29px - 105px);
+      max-width: 69px;
+      width: auto;
+    }
+    &--bottom {
+      max-width: 724px;
+      width: auto;
+      height: 69px;
+      left: 29px;
+      bottom: 29px;
+    }
+  }
+}
+
+.hero-scroll__link {
+  //max-width: 370px;
+  display: flex;
+
+  @include on-event() {
+    .scroll-link__arrow {
+      animation: hover 0.7s 2;
+    }
+  }
+
+  .scroll-link {
+    display: inline-block;
+    color: $textColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.14rem;
+  }
+  .scroll-link__arrow {
+    display: block;
+    transform: rotate(45deg);
+    @include square(13px);
+    border: 2px solid $textColor;
+    border-top: 0;
+    border-left: 0;
+    margin-top: 18px;
+  }
+
+  .share__link {
+    margin-left: auto;
+  }
+}
+
+@keyframes hover {
+  0%, 100% {
+    @include translateY(0);
+    transform: translateY(0) rotate(45deg);
+  }
+  25%, 75% {
+    transform: translateY(3px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(45deg);
+  }
+}
+
+@media only screen and (min-resolution: 132dpi) and (max-device-width: 1024px) and (orientation: portrait) {
+  .hero {
+    min-height: auto;
+  }
+  .hero-content__wrap {
+    min-height: auto;
+  }
+  .hero__img-text--left {
+    height: calc(100% - 18px - 79px);
+    width: auto;
+  }
+  .hero__img-text--bottom {
+    height: 52px;
+  }
+}

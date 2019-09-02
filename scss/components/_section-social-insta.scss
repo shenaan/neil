@@ -1,0 +1,30 @@
+.section-social__insta{
+  margin-bottom: 40px;
+
+  @include respond-to(md){
+    margin-bottom: 60px;
+  }
+}
+
+.section-social__item-insta{
+  width: 50%;
+  max-width: 50%;
+  padding: 0 10px;
+  margin-bottom: 19px;
+
+  a{
+    max-width: 173px;
+  }
+  @include respond-to(sm){
+    width: 25%;
+    max-width: 25%;
+  }
+  @include respond-to(md){
+    width: 25%;
+    max-width: 25%;
+    margin-bottom: 0;
+    a{
+      max-width: none;
+    }
+  }
+}

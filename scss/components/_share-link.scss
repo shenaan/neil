@@ -1,0 +1,17 @@
+.share__link{
+  display: block;
+  background: url("#{$imgUrl}share-icon.png") no-repeat center /contain;
+  @include size(25px, 21px);
+  @include transition-03;
+
+  &--pink{
+    background-image: url("#{$imgUrl}share-icon-pink.png");
+  }
+  @include on-event(){
+    opacity: 0.8;
+  }
+
+  @include respond-to(md){
+    @include size(31px, 32px);
+  }
+}

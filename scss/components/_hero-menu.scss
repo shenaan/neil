@@ -1,0 +1,26 @@
+.hero-content__wrap {
+  min-height: 50vh;
+  padding-top: 38px;
+}
+
+.hero-menu__list{
+  margin-bottom: 46px;
+}
+
+.hero-menu__list-item{
+  @include on-event(){
+    .hero-menu__list-link{
+      transform: translateX(10px);
+    }
+  }
+}
+
+.hero-menu__list-link{
+  display: inline-block;
+  color: $textColor;
+  text-transform: uppercase;
+  font-size: 3.43rem; //48px
+  line-height: 3rem; //42px
+  font-weight: 700;
+  @include transition-04;
+ }

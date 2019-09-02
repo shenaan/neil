@@ -1,0 +1,52 @@
+.section-social__item-twitter{
+  width: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  margin-bottom: 23px;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  a{
+    color: $textColor;
+    display: flex;
+  }
+
+  @include respond-to(sm){
+    width: 50%;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.section-social__twitter-img{
+  @include square(46px);
+  min-width: 46px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 1 46px;
+  margin-right: 16px;
+  img{
+    @include imageCover;
+    object-position: center;
+  }
+
+  @include respond-to(sm){
+
+  }
+}
+
+.section-social__twitter-content{
+  padding-right: 5px;
+  p{
+    margin-bottom: 0;
+    line-height: 1.29rem; //18px
+  }
+  span{
+    color: $pinkColor;
+    display: block;
+    font-weight: 700;
+  }
+}

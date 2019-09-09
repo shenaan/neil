@@ -144,12 +144,13 @@ $(document).ready(function () {
 
         var $this = $(this),
             href = $this.attr('href');
-
+        $('body').addClass('no-scroll-initial');
         $('body').find('.modal__wrap' + href).addClass('is-active');
     });
 
     $('.modal__close-btn').on('click', function (e) {
         $('.modal__wrap').removeClass('is-active');
+        $('body').removeClass('no-scroll-initial');
     });
 
     songActiveInit();

@@ -17,7 +17,7 @@
   &.is-active{
     opacity: 1;
     visibility: visible;
-    z-index: 1000;
+    z-index: 1001;
     @include translateX(0);
   }
 }
@@ -44,30 +44,49 @@
 
 .modal__close {
   position: absolute;
-  top: 42px;
-  left: 22px;
-
-  @include respond-to(md){
-    top: 42px;
-    left: 28px;
-  }
+  top: 15px;
+  left: 15px;
 }
 
 .modal__close-btn {
-  background: transparent !important;
+  background: url("#{$imgUrl}close-btn.png")no-repeat center /contain;
+  @include size(30px, 33px);
   border: none !important;
   color: rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
   @include transition-03;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include on-event{
+    transform: translate(1px, 2px) scale(0.96, 0.96) perspective(1px) translateZ(0);
+  }
 
   img{
     width: 25px;
     @include transition-03;
   }
-  
+
+  span{
+    display: block;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+  }
   &:hover, &:focus,&:active{
     img{
       opacity: 0.7;
+    }
+  }
+
+  @include respond-to(md){
+    @include size(48px, 53px);
+
+    span{
+      margin-left: 4px;
     }
   }
 }

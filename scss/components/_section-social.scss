@@ -1,10 +1,10 @@
 .section-social{
   padding-top: 66px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 
   @include respond-to(md){
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 106px;
+    padding-bottom: 55px;
   }
 }
 
@@ -76,7 +76,7 @@
 .section-social__info{
   font-weight: 700;
   font-size: 1.29rem;
-  margin-top: 82px;
+  margin-top: 87px;
   letter-spacing: -0.4px;
   a{
     text-decoration: underline;

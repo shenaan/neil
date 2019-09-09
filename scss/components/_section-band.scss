@@ -1,5 +1,5 @@
 .section-band {
-  padding-top: 45px;
+  padding-top: 75px;
   padding-bottom: 52px;
   .section__card--left {
     order: 2;
@@ -9,8 +9,8 @@
   }
 
   @include respond-to(md) {
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 140px;
+    padding-bottom: 160px;
     .section__inner {
       min-height: 579px;
       position: relative;
@@ -32,7 +32,6 @@
     left: 95px;
   }
   @include respond-to(lg) {
-    left: 146px;
     left: 176px;
     top: 4px;
   }

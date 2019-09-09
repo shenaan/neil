@@ -3,8 +3,8 @@
   padding-bottom: 54px;
 
   @include respond-to(md){
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 129px;
+    padding-bottom: 42px;
     .main-container__inner{
       padding-right: 0;
     }
@@ -50,7 +50,7 @@
 .section-help__list{
 
   @include respond-to(md){
-    max-width: 444px;
+    max-width: 494px;
   }
 }
 
@@ -120,6 +120,6 @@
   margin-top: 29px;
   position: relative;
   @include respond-to(md){
-    margin-top: 56px;
+    margin-top: 59px;
   }
 }

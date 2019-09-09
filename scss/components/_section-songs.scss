@@ -42,8 +42,7 @@
   @include respond-to(md) {
     padding-top: 100px;
     padding-bottom: 92px;
-    min-height: 705px;
-    height: auto;
+    height: 705px;
     &:before {
       display: block;
     }

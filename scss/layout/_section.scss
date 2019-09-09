@@ -1,13 +1,14 @@
 .section {
   z-index: 1;
   @include respond-to(md) {
-    min-height: 100vh;
-    padding: 20px 0 !important;
+    //min-height: 100vh;
+    //padding: 20px 0 !important;
+    //padding: 104px 0 0;
     display: flex;
     align-items: center;
-    @include ieStyles {
-      height: 100vh;
-    }
+    //@include ieStyles {
+      //height: 100vh;
+    //}
   }
 }
 

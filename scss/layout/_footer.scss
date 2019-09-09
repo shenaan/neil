@@ -1,5 +1,5 @@
 .footer {
-  padding: 41px 0;
+  padding: 38px 0;
   border-top: 1px solid #c5c5c5;
 
   p {
@@ -26,6 +26,7 @@
   p{
     width: 100%;
     max-width: 100%;
+    letter-spacing: -0.2px;
   }
 
   @include respond-to(md){
@@ -39,7 +40,7 @@
 
 .footer__logo {
   max-width: 150px;
-  margin-right: 7px;
+  margin-right: 10px;
   img {
     width: 100%;
   }
@@ -64,6 +65,9 @@
     &:first-of-type {
       margin-right: 15px;
     }
+  }
+  a{
+    color: $textColor;
   }
 
   @include respond-min(400){
@@ -94,9 +98,14 @@
   margin-right: 11px;
   height: 18px;
   display: inline-block;
+  @include transition-03;
 
   &:last-of-type{
     margin-right: 0;
+  }
+
+  @include on-event{
+    opacity: 0.8;
   }
 
   img{

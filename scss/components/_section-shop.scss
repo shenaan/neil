@@ -19,6 +19,8 @@
   }
 
   @include respond-to(md) {
+    padding-top: 102px;
+    padding-bottom: 102px;
     &:before {
       display: none;
     }
